@@ -15,14 +15,14 @@ My First React App
           render() {
             return (
               <div>
-                <h1>You Suck!</h1>
+                <h1>Hello {this.props.name}!</h1>
               </div>
             );
           }
         }
 
         ReactDOM.render(
-          <Greeting />, document.getElementById('app')
+          <Greeting name="John Smith"/>, document.getElementById('app')
         );
       </script>
   </body>
